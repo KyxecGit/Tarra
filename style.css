@@ -159,17 +159,17 @@ svg {
   
   .content {
     padding: 0.5rem;
-    perspective: 1000px;
   }
   
   .content-image {
     border-radius: 0;
     box-shadow: none;
-    animation: fadeInScale 0.8s ease-out;
+    transform: scale(0.85);
+    animation: fadeIn 0.8s ease-out forwards;
   }
   
   .content-image:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: scale(0.95);
   }
 }
 
