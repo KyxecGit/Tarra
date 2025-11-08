@@ -84,10 +84,11 @@ svg {
   border-radius: 0;
   box-shadow: none;
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  animation: fadeInScale 1.2s ease-out;
   cursor: pointer;
   background: transparent;
   transform: scale(0.85);
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
 .content-image:hover {
@@ -95,6 +96,15 @@ svg {
 }
 
 /* Анимация появления */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInScale {
   0% {
     opacity: 0;
