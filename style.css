@@ -202,6 +202,9 @@ svg {
 
   .hero {
     background-attachment: scroll;
+    height: auto;
+    min-height: 60vh;
+    padding: 2rem 0;
   }
 
   .video-section {
@@ -227,6 +230,11 @@ svg {
 
 /* Small mobile */
 @media screen and (max-width: 480px) {
+  .hero {
+    min-height: 50vh;
+    padding: 1rem 0;
+  }
+
   .video-section {
     padding: 2.5rem 0.75rem 2rem;
   }
