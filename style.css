@@ -1,0 +1,284 @@
+/* ===================================
+   Modern Reset
+   =================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #0c0c0c;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===================================
+   Hero Section — фото на весь экран
+   =================================== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('images/IMG_1431.PNG') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.0) 50%,
+    rgba(12, 12, 12, 0.85) 100%
+  );
+  pointer-events: none;
+}
+
+/* ===================================
+   Video Section
+   =================================== */
+.video-section {
+  width: 100%;
+  background: #0c0c0c;
+  padding: 5rem 2rem 4rem;
+}
+
+.video-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #e8e0d6;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.video-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #161616;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.video-placeholder-1 {
+  background: linear-gradient(135deg, #d4a574 0%, #8b6f47 50%, #3a3a3a 100%);
+  opacity: 0.9;
+}
+
+.video-placeholder-2 {
+  background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 50%, #1a1a1a 100%);
+  opacity: 0.85;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  background: #111;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===================================
+   Instagram Button
+   =================================== */
+.instagram-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #833ab4 0%,
+    #fd1d1d 50%,
+    #fcb045 100%
+  );
+  background-size: 200% 200%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(131, 58, 180, 0.35);
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(131, 58, 180, 0.5);
+}
+
+.instagram-btn:active {
+  transform: translateY(0);
+}
+
+.instagram-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .video-section {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .video-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero {
+    background-attachment: scroll;
+  }
+
+  .video-section {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .instagram-btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  .video-section {
+    padding: 2.5rem 0.75rem 2rem;
+  }
+
+  .video-card {
+    border-radius: 8px;
+  }
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #e8e0d6;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+  .hero {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
+
+  .video-section {
+    background: #fff;
+    color: #000;
+  }
+
+  .instagram-btn {
+    color: #000;
+    border: 1px solid #000;
+    background: none;
+    box-shadow: none;
+  }
+}
