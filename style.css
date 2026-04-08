@@ -99,27 +99,6 @@ svg {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-.video-placeholder {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 9 / 16;
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-}
-
-.video-placeholder-1 {
-  background: linear-gradient(135deg, #d4a574 0%, #8b6f47 50%, #3a3a3a 100%);
-  opacity: 0.9;
-}
-
-.video-placeholder-2 {
-  background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 50%, #1a1a1a 100%);
-  opacity: 0.85;
-}
-
 .video-player {
   width: 100%;
   height: auto;
@@ -142,41 +121,31 @@ svg {
 }
 
 .instagram-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
+  display: inline-block;
   padding: 1rem 2.4rem;
-  border-radius: 50px;
+  border: 1px solid #e8e0d6;
+  border-radius: 2px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  color: #fff;
-  background: linear-gradient(
-    135deg,
-    #833ab4 0%,
-    #fd1d1d 50%,
-    #fcb045 100%
-  );
-  background-size: 200% 200%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 20px rgba(131, 58, 180, 0.35);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e8e0d6;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
 .instagram-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(131, 58, 180, 0.5);
+  color: #fff;
+  border-color: #fff;
+  background: rgba(232, 224, 214, 0.05);
 }
 
 .instagram-btn:active {
-  transform: translateY(0);
-}
-
-.instagram-icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
+  color: #e8e0d6;
+  border-color: #e8e0d6;
+  background: transparent;
 }
 
 /* ===================================
