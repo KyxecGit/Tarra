@@ -1,2 +1,7 @@
-# Original uncompressed videos
+# Original uncompressed videos and old images
 *.MOV
+images/back.jpg
+images/info.png
+
+# Optimized videos (use LFS or distribute separately)
+videos/*.mp4
