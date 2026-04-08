@@ -1,7 +1,6 @@
-# Original uncompressed videos and old images
+# Original uncompressed videos (exclude large MOV files)
 *.MOV
+
+# Unused old images
 images/back.jpg
 images/info.png
-
-# Optimized videos (use LFS or distribute separately)
-videos/*.mp4
