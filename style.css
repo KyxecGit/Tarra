@@ -9,9 +9,9 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 .hero-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:2rem}
 .hero-card{max-width:1300px;width:90vw;height:auto;transition:transform .8s cubic-bezier(.25,.46,.45,.94);filter:drop-shadow(0 8px 40px rgba(0,0,0,.5))}
 
-.hero:hover .hero-bg,.hero.active .hero-bg{transform:scale(1.08)}
-.hero:hover .hero-darken,.hero.active .hero-darken{background:rgba(0,0,0,.45)}
-.hero:hover .hero-card,.hero.active .hero-card{transform:scale(1.05)}
+.hero:hover .hero-bg,.hero.active .hero-bg{transform:scale(1.12)}
+.hero:hover .hero-darken,.hero.active .hero-darken{background:rgba(0,0,0,.5)}
+.hero:hover .hero-card,.hero.active .hero-card{transform:scale(1.18)}
 
 .video-section{width:100%;background:#0c0c0c;padding:5rem 2rem 4rem}
 .video-section-inner{max-width:720px;margin:0 auto}
