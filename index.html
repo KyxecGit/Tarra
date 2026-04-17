@@ -1,59 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tarra — Restaurant">
+    <meta name="description" content="Tarra  Restaurant">
     <meta name="keywords" content="tarra, restaurant, dining">
     <title>Tarra</title>
-    
-    <!-- Preload hero image -->
-    <link rel="preload" href="images/IMG_1431.PNG" as="image">
-    
-    <!-- Google Fonts -->
+    <link rel="preload" href="images/back.PNG" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <!-- ======= Hero Section ======= -->
-    <section class="hero" aria-label="Hero image">
-      <div class="hero-overlay"></div>
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg"></div>
+      <div class="hero-darken"></div>
+      <div class="hero-content">
+        <img src="images/text.PNG" alt="Tarra  Opening Soon" class="hero-card">
+      </div>
     </section>
-
-    <!-- ======= Video Section ======= -->
     <section class="video-section">
       <div class="video-section-inner">
         <h2 class="section-title">Get to Know Us</h2>
         <div class="video-grid">
           <div class="video-card">
-            <video 
-              class="video-player" 
-              controls 
-              playsinline 
-              preload="metadata"
-              poster="videos/poster1.jpg">
-              <source src="videos/video1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="video-card">
-            <video 
-              class="video-player" 
-              controls 
-              playsinline 
-              preload="metadata"
-              poster="videos/poster2.jpg">
-              <source src="videos/video2.mp4" type="video/mp4">
+            <video class="video-player" controls playsinline preload="metadata" poster="videos/poster.jpg">
+              <source src="videos/video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
-
-        <!-- Instagram Button -->
         <div class="instagram-wrapper">
           <a href="https://www.instagram.com/tarrachicago/" target="_blank" rel="noopener noreferrer" class="instagram-btn">
             Follow us on Instagram
@@ -61,7 +38,6 @@
         </div>
       </div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>

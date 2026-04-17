@@ -1,6 +1,17 @@
-# Original uncompressed videos (exclude large MOV files)
+# Original uncompressed videos
 *.MOV
 
 # Unused old images
 images/back.jpg
 images/info.png
+images/IMG_1431.PNG
+
+# Old videos/posters
+videos/video1.mp4
+videos/video2.mp4
+videos/poster1.jpg
+videos/poster2.jpg
+
+# Root copies of images
+/back.PNG
+/text.PNG
