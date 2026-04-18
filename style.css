@@ -28,7 +28,7 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 
 @media screen and (max-width:1024px){.video-section{padding:4rem 1.5rem 3rem}.hero-card{width:120vw;max-width:none}}
 @media screen and (max-width:768px){html{font-size:14px}.video-section{padding:3rem 1rem 2.5rem}.section-title{margin-bottom:2rem}.instagram-btn{padding:.9rem 2rem;font-size:.9rem}.hero-card{width:160vw;max-width:none}}
-@media screen and (max-width:480px){.video-section{padding:2.5rem .75rem 2rem}.video-card{border-radius:8px}.hero-card{width:200vw;max-width:none}.hero-content{transform:translateY(-100px) translateX(-8vw)}}
+@media screen and (max-width:480px){.video-section{padding:2.5rem .75rem 2rem}.video-card{border-radius:8px}.hero-card{width:200vw;max-width:none}.hero-content{transform:translateY(-100px) translateX(-2vw)}}
 
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #e8e0d6;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}}
