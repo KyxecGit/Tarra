@@ -7,7 +7,7 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 .hero-bg{position:absolute;inset:0;background:url('images/back.PNG') no-repeat center center;background-size:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94);z-index:0}
 .hero-darken{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .8s cubic-bezier(.25,.46,.45,.94);z-index:1;pointer-events:none}
 .hero-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:2rem;transform:translateY(-100px)}
-.hero-card{max-width:1300px;width:90vw;height:auto;transition:transform .8s cubic-bezier(.25,.46,.45,.94);filter:drop-shadow(0 8px 40px rgba(0,0,0,.5));cursor:pointer;min-height:clamp(300px,50vh,900px)}
+.hero-card{max-width:1300px;width:clamp(280px,85vw,1300px);height:auto;transition:transform .8s cubic-bezier(.25,.46,.45,.94);filter:drop-shadow(0 8px 40px rgba(0,0,0,.5));cursor:pointer}
 
 .hero-card:hover{transform:scale(1.18)}
 
@@ -27,8 +27,8 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 .instagram-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:transparent}
 
 @media screen and (max-width:1024px){.video-section{padding:4rem 1.5rem 3rem}}
-@media screen and (max-width:768px){html{font-size:14px}.hero{height:auto;min-height:80vh;padding:2rem 0}.hero-content{transform:translateY(-50px)}.hero-card{max-width:1000px;min-height:clamp(280px,40vh,800px)}.video-section{padding:3rem 1rem 2.5rem}.section-title{margin-bottom:2rem}.instagram-btn{padding:.9rem 2rem;font-size:.9rem}}
-@media screen and (max-width:480px){.hero{min-height:auto;padding:0}.hero-content{transform:translateY(-20px);padding:1rem}.hero-card{max-width:none;width:95vw;min-height:clamp(250px,70vw,500px)}.video-section{padding:2.5rem .75rem 2rem}.video-card{border-radius:8px}}
+@media screen and (max-width:768px){html{font-size:14px}.video-section{padding:3rem 1rem 2.5rem}.section-title{margin-bottom:2rem}.instagram-btn{padding:.9rem 2rem;font-size:.9rem}}
+@media screen and (max-width:480px){.video-section{padding:2.5rem .75rem 2rem}.video-card{border-radius:8px}}
 
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #e8e0d6;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}}
