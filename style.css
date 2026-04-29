@@ -3,7 +3,7 @@ html{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:g
 body{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#0c0c0c;overflow-x:hidden}
 img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 
-.hero{width:100%;height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:default;margin-bottom:60px}
+.hero{width:100%;height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:default}
 .hero-bg{position:absolute;inset:0;background:url('images/back.PNG') no-repeat center center;background-size:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94);z-index:0}
 .hero-darken{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .8s cubic-bezier(.25,.46,.45,.94);z-index:1;pointer-events:none}
 .hero-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:2rem;transform:translateY(-100px)}
@@ -13,10 +13,9 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 
 .wave-transition{position:absolute;bottom:-1px;left:0;width:100%;height:120px;z-index:3;fill:#0c0c0c}
 
-.video-section{width:100%;height:100vh;padding:0 2rem;position:relative;overflow:hidden;background:#0c0c0c;display:flex;align-items:center;justify-content:center}
+.video-section{width:100%;height:100vh;padding:0 2rem;position:relative;overflow:hidden;background:transparent;display:flex;align-items:center;justify-content:center;margin-top:-119px}
 .video-section-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.95) contrast(1.05)}
-.video-section-overlay{position:absolute;inset:0;background:rgba(0,0,0,.55);z-index:1}
-.video-wave-bottom{position:absolute;bottom:-1px;left:0;width:100%;height:120px;z-index:3;fill:#0c0c0c}
+.video-section-overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:1}
 .video-section-inner{max-width:760px;width:100%;margin:0 auto;position:relative;z-index:4;text-align:center}
 .section-title{font-family:'Cormorant Garamond','Georgia',serif;font-weight:300;font-size:clamp(2rem,4vw,3.2rem);color:#f2ece3;text-align:center;margin-bottom:1rem;letter-spacing:.15em;text-transform:uppercase;text-shadow:0 4px 24px rgba(0,0,0,.45)}
 .section-subtitle{font-size:clamp(1rem,1.7vw,1.2rem);line-height:1.6;color:#ded5c9;max-width:620px;margin:0 auto 2.2rem;letter-spacing:.02em}
