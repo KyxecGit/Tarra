@@ -13,22 +13,22 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 
 .wave-transition{position:absolute;bottom:-1px;left:0;width:100%;height:120px;z-index:3;fill:#0c0c0c}
 
-.video-section{width:100%;background:#0c0c0c;padding:8rem 2rem 4rem;position:relative;overflow:hidden}
-.video-section::before{content:'';position:absolute;top:-100px;left:0;right:0;height:200px;background:linear-gradient(180deg,transparent 0%,#0c0c0c 100%);pointer-events:none;z-index:0}
-.video-section-inner{max-width:720px;margin:0 auto;position:relative;z-index:1}
-.section-title{font-family:'Cormorant Garamond','Georgia',serif;font-weight:300;font-size:clamp(2rem,4vw,3.2rem);color:#e8e0d6;text-align:center;margin-bottom:3rem;letter-spacing:.15em;text-transform:uppercase}
-.video-grid{display:flex;justify-content:center}
-.video-card{position:relative;border-radius:12px;overflow:hidden;background:#161616;box-shadow:0 8px 32px rgba(0,0,0,.4);width:100%}
-.video-player{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover;background:#111}
+.video-section{width:100%;min-height:70vh;padding:7rem 2rem 5rem;position:relative;overflow:hidden;background:#0c0c0c;display:flex;align-items:center}
+.video-section-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.95) contrast(1.05)}
+.video-section-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.78) 0%,rgba(12,12,12,.72) 45%,rgba(10,10,10,.86) 100%);z-index:1}
+.video-section::before{content:'';position:absolute;top:-100px;left:0;right:0;height:200px;background:linear-gradient(180deg,transparent 0%,#0c0c0c 100%);pointer-events:none;z-index:2}
+.video-section-inner{max-width:760px;margin:0 auto;position:relative;z-index:3;text-align:center}
+.section-title{font-family:'Cormorant Garamond','Georgia',serif;font-weight:300;font-size:clamp(2rem,4vw,3.2rem);color:#f2ece3;text-align:center;margin-bottom:1rem;letter-spacing:.15em;text-transform:uppercase;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+.section-subtitle{font-size:clamp(1rem,1.7vw,1.2rem);line-height:1.6;color:#ded5c9;max-width:620px;margin:0 auto 2.2rem;letter-spacing:.02em}
 
-.instagram-wrapper{display:flex;justify-content:center;margin-top:3.5rem;padding-bottom:1rem}
-.instagram-btn{display:inline-block;padding:1rem 2.4rem;border:1px solid #e8e0d6;border-radius:2px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:#e8e0d6;background:transparent;transition:all .3s ease}
-.instagram-btn:hover{color:#fff;border-color:#fff;background:rgba(232,224,214,.05)}
-.instagram-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:transparent}
+.cta-wrapper{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.instagram-btn,.hiring-btn{display:inline-block;padding:1rem 2.2rem;border:1px solid #e8e0d6;border-radius:2px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#efe6dc;background:rgba(20,20,20,.2);backdrop-filter:blur(2px);transition:all .3s ease}
+.instagram-btn:hover,.hiring-btn:hover{color:#fff;border-color:#fff;background:rgba(232,224,214,.12);transform:translateY(-1px)}
+.instagram-btn:active,.hiring-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:rgba(20,20,20,.2);transform:none}
 
-@media screen and (max-width:1024px){.video-section{padding:4rem 1.5rem 3rem}.hero-card{width:120vw;max-width:none}}
-@media screen and (max-width:768px){html{font-size:14px}.video-section{padding:3rem 1rem 2.5rem}.section-title{margin-bottom:2rem}.instagram-btn{padding:.9rem 2rem;font-size:.9rem}.hero-card{width:160vw;max-width:none}}
-@media screen and (max-width:480px){.video-section{padding:2.5rem .75rem 2rem}.video-card{border-radius:8px}.hero-card{width:200vw;max-width:none}.hero-content{transform:translateY(-100px) translateX(-2vw)}}
+@media screen and (max-width:1024px){.video-section{padding:5.5rem 1.5rem 4rem}.hero-card{width:120vw;max-width:none}}
+@media screen and (max-width:768px){html{font-size:14px}.video-section{min-height:62vh;padding:4.5rem 1rem 3.2rem}.section-title{margin-bottom:.8rem}.section-subtitle{margin-bottom:1.8rem}.instagram-btn,.hiring-btn{padding:.9rem 1.5rem;font-size:.82rem}.hero-card{width:160vw;max-width:none}}
+@media screen and (max-width:480px){.video-section{min-height:58vh;padding:4rem .75rem 2.8rem}.hero-card{width:200vw;max-width:none}.hero-content{transform:translateY(-100px) translateX(-2vw)}}
 
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #e8e0d6;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}}
