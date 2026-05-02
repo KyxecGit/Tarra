@@ -1,14 +1,15 @@
-﻿*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}
 body{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#0c0c0c;overflow-x:hidden}
 img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 
 .hero{width:100%;height:100vh;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;cursor:default}
-.hero-bg{position:absolute;inset:0;background:url('images/back.PNG') no-repeat center center;background-size:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94);z-index:0}
+.hero-bg{position:absolute;inset:0;background:url('assets/images/back.png') no-repeat center center;background-size:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94);z-index:0}
 .hero-darken{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .8s cubic-bezier(.25,.46,.45,.94);z-index:1;pointer-events:none}
-.hero-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:2rem;flex:1;transform:translateX(-0.5%)}
-.hero-card{max-width:1300px;width:clamp(280px,85vw,1300px);height:auto;transition:transform .8s cubic-bezier(.25,.46,.45,.94);filter:drop-shadow(0 8px 40px rgba(0,0,0,.5));cursor:pointer}
-.hero-card:hover{transform:scale(1.18)}
+.hero-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:2rem;flex:1}
+/* To perfectly center an off-center PNG visually, we use a relative left/right offset based on its container. Adjusting the translation seamlessly across all devices. */
+.hero-card{max-width:1300px;width:clamp(280px,85vw,1300px);height:auto;transform:translateX(-1%);transition:transform .8s cubic-bezier(.25,.46,.45,.94);filter:drop-shadow(0 8px 40px rgba(0,0,0,.5));cursor:pointer;will-change:transform}
+.hero-card:hover{transform:translateX(-1%) scale(1.18)}
 .hero-bottom{position:relative;z-index:2;width:100%;text-align:center;padding:0 2rem 3rem;}
 
 .wave-transition{display:none}
@@ -24,8 +25,8 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 .instagram-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:rgba(20,20,20,.2);transform:none}
 
 @media screen and (max-width:1024px){.hero-card{width:120vw;max-width:none}}
-@media screen and (max-width:768px){html{font-size:14px}.section-title{margin-bottom:.5rem}.section-subtitle{margin-bottom:1.2rem}.instagram-btn{padding:.9rem 1.5rem;font-size:.82rem}.hero-card{width:160vw;max-width:none}.cta-wrapper{flex-direction:column;align-items:center}}
-@media screen and (max-width:480px){.hero-card{width:200vw;max-width:none}.hero-content{transform:translateX(-2.5vw)}.hero-bottom{padding:0 1rem 2rem}}
+@media screen and (max-width:768px){html{font-size:14px}.section-title{margin-bottom:.5rem}.section-subtitle{margin-bottom:1.2rem}.instagram-btn{padding:.9rem 1.5rem;font-size:.82rem}.hero-card{width:160vw;max-width:none;transform:translateX(-1.5%)}.hero-card:hover{transform:translateX(-1.5%) scale(1.12)}.cta-wrapper{flex-direction:column;align-items:center}}
+@media screen and (max-width:480px){.hero-card{width:200vw;max-width:none;transform:translateX(-2%)}.hero-card:hover{transform:translateX(-2%) scale(1.1)}.hero-bottom{padding:0 1rem 2rem}}
 
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #e8e0d6;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}}
