@@ -20,12 +20,12 @@ img,picture,video,canvas,svg{display:block;max-width:100%;height:auto}
 .section-subtitle{font-size:clamp(.85rem,1.4vw,1rem);line-height:1.6;color:#ded5c9;max-width:620px;margin:0 auto 1.6rem;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.7)}
 
 .cta-wrapper{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-.instagram-btn{display:inline-block;padding:1rem 2.2rem;border:1px solid #e8e0d6;border-radius:2px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#efe6dc;background:rgba(20,20,20,.2);backdrop-filter:blur(2px);transition:all .3s ease}
-.instagram-btn:hover{color:#fff;border-color:#fff;background:rgba(232,224,214,.12);transform:translateY(-1px)}
-.instagram-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:rgba(20,20,20,.2);transform:none}
+.action-btn{display:inline-block;padding:1rem 2.2rem;border:1px solid #e8e0d6;border-radius:2px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:400;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#efe6dc;background:rgba(20,20,20,.2);backdrop-filter:blur(2px);transition:all .3s ease}
+.action-btn:hover{color:#fff;border-color:#fff;background:rgba(232,224,214,.12);transform:translateY(-1px)}
+.action-btn:active{color:#e8e0d6;border-color:#e8e0d6;background:rgba(20,20,20,.2);transform:none}
 
 @media screen and (max-width:1024px){.hero-card{width:120vw;max-width:none}}
-@media screen and (max-width:768px){html{font-size:14px}.section-title{margin-bottom:.5rem}.section-subtitle{margin-bottom:1.2rem}.instagram-btn{padding:.9rem 1.5rem;font-size:.82rem}.hero-card{width:160vw;max-width:none;transform:translateX(-1.5%)}.hero-card:hover{transform:translateX(-1.5%) scale(1.12)}.cta-wrapper{flex-direction:column;align-items:center}}
+@media screen and (max-width:768px){html{font-size:14px}.section-title{margin-bottom:.5rem}.section-subtitle{margin-bottom:1.2rem}.action-btn{padding:.9rem 1.5rem;font-size:.82rem}.hero-card{width:160vw;max-width:none;transform:translateX(-1.5%)}.hero-card:hover{transform:translateX(-1.5%) scale(1.12)}.cta-wrapper{flex-direction:column;align-items:center}}
 @media screen and (max-width:480px){.hero-card{width:200vw;max-width:none;transform:translateX(-2%)}.hero-card:hover{transform:translateX(-2%) scale(1.1)}.hero-bottom{padding:0 1rem 2rem}}
 
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #e8e0d6;outline-offset:3px}
